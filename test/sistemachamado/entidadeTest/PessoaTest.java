@@ -8,6 +8,7 @@ package sistemachamado.entidadeTest;
 
 import entidade.Pessoa;
 import static org.junit.Assert.assertEquals;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -16,8 +17,7 @@ import org.junit.Test;
  */
 public class PessoaTest {
     
-    public PessoaTest() {
-    }
+    
     
     @Test
     public void getNomeTelefoneTest(){
@@ -36,5 +36,7 @@ public class PessoaTest {
         assertEquals("natalia", p1.getNome());
         assertEquals(23456789, p1.getTelefone());
     }
+    
+    
     
 }
