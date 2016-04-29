@@ -5,7 +5,7 @@
  */
 package sistemachamado.controle;
 
-import sistemachamado.apresentaçao.TelaCadastroTecnico;
+import sistemachamado.apresentacao.TelaCadastroTecnico;
 import sistemachamado.entidade.Tecnico;
 import sistemachamado.persistencia.TecnicoDAO;
 

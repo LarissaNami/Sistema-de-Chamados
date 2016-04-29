@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemachamado.apresentaçao;
+package sistemachamado.apresentacao;
 
-import static com.sun.glass.ui.Cursor.setVisible;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.InputMismatchException;
 import java.util.Iterator;
-import javafx.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -28,15 +27,15 @@ import sistemachamado.persistencia.EmpresaDAO;
 
 /**
  *
- * @author 41414268
+ * @author Richard
  */
 public class TelaCadastroCliente extends JFrame {
 
     /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-    private ControleClientes ctrCliente;
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private ControleClientes ctrCliente;
     private EmpresaDAO empresaDAO;
     private Container container;
     private GerenciadorEventos gerenciadorEventos;
@@ -171,7 +170,7 @@ public class TelaCadastroCliente extends JFrame {
 
                 boolean validaCPF = true;
 
-                //tem q fazer dentro de um if, se fosse fora esse metodo iria executar
+            	//tem q fazer dentro de um if, se fosse fora esse metodo iria executar
                 //mesmo depois do catch, com um valor erroneo, e sempre daria errado
                 if (CPFvalido != -1) {
                     validaCPF = ctrCliente.getClienteDAO().validarCPF(CPFvalido);
@@ -210,9 +209,8 @@ public class TelaCadastroCliente extends JFrame {
                 new TelaCancelar().setVisible(true);
             }
         }
-
+        
     }
-
     private class TelaCancelar extends JFrame {
 
         /**

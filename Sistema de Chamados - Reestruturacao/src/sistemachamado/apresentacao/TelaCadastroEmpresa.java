@@ -3,28 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemachamado.apresentaçao;
+package sistemachamado.apresentacao;
 
-import static com.sun.glass.ui.Cursor.setVisible;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.InputMismatchException;
-import javafx.event.ActionEvent;
+
+import sistemachamado.controle.ControleEmpresas;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import sistemachamado.controle.ControleEmpresas;
 
-/**
- *
- * @author 41414268
- */
 public class TelaCadastroEmpresa extends JFrame {
 
     /**

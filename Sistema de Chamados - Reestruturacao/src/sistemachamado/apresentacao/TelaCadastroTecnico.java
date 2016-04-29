@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemachamado.apresentaçao;
+package sistemachamado.apresentacao;
 
-import static com.sun.glass.ui.Cursor.setVisible;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.InputMismatchException;
-import javafx.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -23,7 +22,7 @@ import sistemachamado.controle.ControleTecnicos;
 
 /**
  *
- * @author 41414268
+ * @author Richard
  */
 public class TelaCadastroTecnico extends JFrame {
 

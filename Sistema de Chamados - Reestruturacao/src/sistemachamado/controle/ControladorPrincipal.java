@@ -5,7 +5,7 @@
  */
 package sistemachamado.controle;
 
-import sistemachamado.apresentaçao.TelaPrincipal;
+import sistemachamado.apresentacao.TelaPrincipal;
 
 /**
  *

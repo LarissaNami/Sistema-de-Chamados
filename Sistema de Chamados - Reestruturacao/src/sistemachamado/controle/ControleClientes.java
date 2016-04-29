@@ -5,7 +5,7 @@
  */
 package sistemachamado.controle;
 
-import sistemachamado.apresentaçao.TelaCadastroCliente;
+import sistemachamado.apresentacao.TelaCadastroCliente;
 import sistemachamado.entidade.ClienteEmpresa;
 import sistemachamado.entidade.Empresa;
 import sistemachamado.persistencia.ClienteDAO;

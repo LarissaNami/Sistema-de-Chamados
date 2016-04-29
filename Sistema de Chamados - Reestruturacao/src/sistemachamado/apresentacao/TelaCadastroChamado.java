@@ -1,37 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package sistemachamado.apresentaçao;
+package sistemachamado.apresentacao;
 
-import static com.sun.glass.ui.Cursor.setVisible;
+import sistemachamado.persistencia.ClienteDAO;
+import sistemachamado.persistencia.TecnicoDAO;
+import sistemachamado.controle.ControleChamados;
+import sistemachamado.controle.ControleClientes;
+import sistemachamado.entidade.Chamado;
+import sistemachamado.entidade.ClienteEmpresa;
+import sistemachamado.entidade.Tecnico;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.InputMismatchException;
 import java.util.Iterator;
-import javafx.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import sistemachamado.controle.ControleChamados;
-import sistemachamado.controle.ControleClientes;
-import sistemachamado.entidade.Chamado;
-import sistemachamado.entidade.ClienteEmpresa;
-import sistemachamado.entidade.Tecnico;
-import sistemachamado.persistencia.ClienteDAO;
-import sistemachamado.persistencia.TecnicoDAO;
 
 /**
  *
- * @author 41414268
+ * @author Richard
  */
 public class TelaCadastroChamado extends JFrame {
 

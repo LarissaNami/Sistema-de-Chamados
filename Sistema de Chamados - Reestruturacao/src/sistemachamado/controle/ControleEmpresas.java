@@ -7,7 +7,7 @@ package sistemachamado.controle;
 
 import java.util.Collection;
 import javax.swing.JOptionPane;
-import sistemachamado.apresentaçao.TelaCadastroEmpresa;
+import sistemachamado.apresentacao.TelaCadastroEmpresa;
 import sistemachamado.entidade.Empresa;
 import sistemachamado.persistencia.EmpresaDAO;
 
