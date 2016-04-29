@@ -5,10 +5,8 @@
  */
 package sistemachamado.persistenciaTest;
 
-import Persistencia.ClienteDAO;
 import entidade.ClienteEmpresa;
 import entidade.Empresa;
-import java.util.HashMap;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,16 +15,13 @@ import org.junit.Test;
  * @author Nelson
  */
 public class ClienteDAOTest {
-    private ClienteDAO cdao;
-    private HashMap<Long, ClienteEmpresa>cm;
+    
     public ClienteDAOTest() {
     }
-//    @Test
-//    public void criandoClienteDAOTest(){
-//        Empresa e = new Empresa(4567, "Informatica");
-//        ClienteEmpresa cm1 = new ClienteEmpresa(12, e, 14587963,"larissa", 12345678);
-//        cdao.persit();
-//        //cdao.validarCPF(cm1.getCpf());
-//        Assert.assertEquals(null, cdao);
-//    }
+    @Test
+    public void criandoClienteTest(){
+        Empresa e = new Empresa(1234, "Informatica");
+        ClienteEmpresa cm = new ClienteEmpresa(12, e, 123456789, "larissa", 12345678);
+        
+    }
 }
