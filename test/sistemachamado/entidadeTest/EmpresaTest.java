@@ -52,15 +52,15 @@ public class EmpresaTest {
         assertEquals(1234, e1.getNumeroContrato());
     }
     
-    @Test
-    public void nomesEmpresasIguaisTest(){
-        Empresa e2 = new Empresa(4567, "Informatica");
-        Empresa e22 = new Empresa(456, "Informatica");
-        assertEquals(e2.getNomeEmpresa(), e22.getNomeEmpresa());
-        assertEquals(e2.getNumeroContrato(), e22.getNumeroContrato());
+//    @Test
+//    public void nomesEmpresasIguaisTest(){
+//        Empresa e2 = new Empresa(4567, "Informatica");
+//        Empresa e22 = new Empresa(456, "Informatica");
+//        assertEquals(e2.getNomeEmpresa(), e22.getNomeEmpresa());
+//        assertEquals(e2.getNumeroContrato(), e22.getNumeroContrato());
 //        assertEquals("Informatica", e2.getNomeEmpresa());
 //        assertEquals(4567, e2.getNumeroContrato());
-    }
+//    }
     
     
 }
