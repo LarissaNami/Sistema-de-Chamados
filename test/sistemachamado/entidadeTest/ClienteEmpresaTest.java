@@ -28,6 +28,7 @@ public class ClienteEmpresaTest {
         assertEquals("larissa", cm.getNome());
         assertEquals(123456789, cm.getCpf());
         assertEquals(12345678, cm.getTelefone());
+        
     }
 
     @Test
@@ -44,15 +45,6 @@ public class ClienteEmpresaTest {
         assertEquals(874561234, cm1.getCpf());
         assertEquals(98745612, cm1.getTelefone());
     }
-    @Test
-    public void informacoesClienteEmpresaInvalidaTest() throws Exception{
-        Empresa e2 = new Empresa(4567, "Samsung");
-        ClienteEmpresa cm2 = new ClienteEmpresa(45, e2, 45678, "mauro", 123456);
-        assertEquals(e2.getNomeEmpresa(), cm2.getEmpresa().getNomeEmpresa());
-        assertEquals(e2.getNumeroContrato(), cm2.getEmpresa().getNumeroContrato());
-        assertEquals("mauro", cm2.getNome());
-        assertEquals(45678978, cm2.getCpf());
-        assertEquals(12345678, cm2.getTelefone());
-    }
+    
     
 }
