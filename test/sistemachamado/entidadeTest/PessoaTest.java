@@ -5,10 +5,10 @@
  */
 package sistemachamado.entidadeTest;
 
-import org.junit.Assert;
+
+import entidade.Pessoa;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-import sistemachamado.entidade.Pessoa;
 
 /**
  *
