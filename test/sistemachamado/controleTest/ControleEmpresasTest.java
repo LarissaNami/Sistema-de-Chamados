@@ -3,26 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemachamado.persistenciaTest;
+package sistemachamado.controleTest;
 
-import entidade.ClienteEmpresa;
+import Persistencia.EmpresaDAO;
 import entidade.Empresa;
-import org.junit.Assert;
 import org.junit.Test;
 
 /**
  *
  * @author Nelson
  */
-public class ClienteDAOTest {
+public class ControleEmpresasTest {
     
-    public ClienteDAOTest() {
+    public ControleEmpresasTest() {
     }
     @Test
-    public void criandoClienteTest(){
+    public void criandoControleEmpresasTest(){
         Empresa e = new Empresa(1234, "Informatica");
-        ClienteEmpresa cm = new ClienteEmpresa(12, e, 123456789, "larissa", 12345678);
-        
+        EmpresaDAO edao = new EmpresaDAO();
+        edao.put(e);
+        edao.persit();
+        edao.getEmpresas();
         
     }
 }
