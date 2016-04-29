@@ -23,5 +23,6 @@ public class ClienteDAOTest {
         Empresa e = new Empresa(1234, "Informatica");
         ClienteEmpresa cm = new ClienteEmpresa(12, e, 123456789, "larissa", 12345678);
         
+        
     }
 }
